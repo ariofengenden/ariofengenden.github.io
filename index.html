@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ari Ofengenden — Tulane University</title>
+<meta name="description" content="Ari Ofengenden — Director of the Hebrew Program, Department of Jewish Studies, Tulane University. Books, publications, and teaching.">
+<meta name="author" content="Ari Ofengenden">
+<style>
+  :root {
+    --bg: #fdfcf9;
+    --ink: #23211c;
+    --muted: #6b675e;
+    --accent: #1f5c4d;
+    --rule: #e4e0d6;
+    --card: #f5f3ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --ink: #eae7de;
+      --muted: #a49f92;
+      --accent: #7dc4ae;
+      --rule: #2e2c24;
+      --card: #201e17;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+    font-size: 1.06rem;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  header.hero { padding: 4.5rem 0 2.5rem; }
+  .hero-row { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+  .hero img {
+    width: 148px; height: 148px; object-fit: cover; object-position: 50% 20%;
+    border-radius: 50%; border: 3px solid var(--rule);
+  }
+  h1 { font-size: 2.3rem; font-weight: 600; letter-spacing: .01em; }
+  .role { color: var(--muted); margin-top: .35rem; max-width: 30rem; }
+  .contact { margin-top: .8rem; font-size: .95rem; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  nav { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  nav .wrap { display: flex; gap: 1.5rem; padding-top: .6rem; padding-bottom: .6rem; flex-wrap: wrap; }
+  nav a { color: var(--muted); text-decoration: none; font-size: .92rem; text-transform: uppercase; letter-spacing: .08em; }
+  nav a:hover { color: var(--accent); }
+
+  section { padding: 2.6rem 0 0; }
+  section:last-of-type { padding-bottom: 3rem; }
+  h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--accent); font-weight: 600; margin-bottom: 1.1rem;
+  }
+  p + p { margin-top: .9rem; }
+
+  ul.books { list-style: none; display: grid; gap: .8rem; }
+  ul.books li { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: .9rem 1.1rem; }
+  ul.books .title { font-style: italic; font-weight: 600; }
+  ul.books .pub { color: var(--muted); font-size: .95rem; }
+
+  ul.pubs, ul.courses { padding-left: 1.2rem; display: grid; gap: .55rem; }
+  ul.pubs li::marker, ul.courses li::marker { color: var(--accent); }
+  .venue { color: var(--muted); font-style: italic; }
+
+  ul.courses { grid-template-columns: 1fr 1fr; column-gap: 2rem; }
+  @media (max-width: 40rem) { ul.courses { grid-template-columns: 1fr; } }
+
+  footer { border-top: 1px solid var(--rule); padding: 1.4rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-row">
+    <img src="assets/headshot.jpg" alt="Portrait of Ari Ofengenden">
+    <div>
+      <h1>Ari Ofengenden</h1>
+      <p class="role">Director of the Hebrew Program, Department of Jewish Studies, Tulane University</p>
+      <p class="contact"><a href="mailto:aofengenden@tulane.edu">aofengenden@tulane.edu</a></p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#service">Editorship &amp; Service</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Ari Ofengenden teaches at Tulane University and has thought, taught, and written about ideology and the relations between ideas and power for upwards of twenty years. He has written numerous articles on Jewish-German writers, psychoanalysis, discourse theory, capitalism, and culture.</p>
+    <p>He earned an M.A. in cognitive psychology, a Ph.D. in comparative literature from Haifa University, and did post-doctoral work at Tübingen University. He has taught at George Washington University and Oberlin College. He is an Elected Member of the European Academy of Sciences and Arts.</p>
+  </section>
+
+  <section id="books">
+    <h2>Books</h2>
+    <ul class="books">
+      <li><span class="title">The Ruling Ideas: How They Ruin Society and Make You Miserable</span><br><span class="pub">Zero Books, 2023</span></li>
+      <li><span class="title">Liberalization and Culture in Contemporary Israel</span><br><span class="pub">Lexington Books / Rowman &amp; Littlefield, 2018</span></li>
+      <li><span class="title">Abraham Shlonsky: An Introduction to His Poetry</span><br><span class="pub">De Gruyter, 2014</span></li>
+      <li><span class="title">The Passion for Absence in Abraham Shlonsky</span><br><span class="pub">Magnes, Hebrew University Press, 2010</span></li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ul class="pubs">
+      <li>"Monotheism the Incomplete Revolution: Narrating the Event in Freud's and Assmann's Moses," <span class="venue">Symplokē</span>, 2015.</li>
+      <li>"Agency, Desire, and Power in Schnitzler's <i>A Dream Novel</i> and Kubrick's Adaptation <i>Eyes Wide Shut</i>," <span class="venue">CLCWeb: Comparative Literature and Culture</span>, 2015.</li>
+      <li>"Language, Body, Dystopia: The Passion for the Real in Orly Castel-Bloom's <i>Dolly City</i>," <span class="venue">The Comparatist</span>, 2014.</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>Recent and selected courses at Tulane:</p>
+    <ul class="courses">
+      <li>Ideology and Belief in Everyday Life</li>
+      <li>Modern Jewish Civilization</li>
+      <li>Intermediate &amp; Advanced Modern Hebrew</li>
+      <li>Jews in Modern Arts</li>
+      <li>Anxiety, Depression &amp; Culture</li>
+      <li>Desire, Ideology, Interpretation</li>
+      <li>World Religions</li>
+      <li>Nazism, Fascism &amp; the Alt-Right</li>
+    </ul>
+  </section>
+
+  <section id="service">
+    <h2>Editorship &amp; Service</h2>
+    <ul class="pubs">
+      <li>Series Editor, Books in Comparative Cultural Studies, Purdue University Press (2016–)</li>
+      <li>Chief Editor, <span class="venue">CLCWeb: Comparative Literature and Culture</span>, Purdue University Press (2017–2019)</li>
+      <li>Elected Member, European Academy of Sciences and Arts (2018–)</li>
+      <li>Member: MLA, ACLA, ICLA, European Association of Social Anthropologists</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© Ari Ofengenden · Tulane University</div>
+</footer>
+
+</body>
+</html>
