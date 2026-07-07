@@ -64,6 +64,12 @@
   ul.books li { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: .9rem 1.1rem; }
   ul.books .title { font-style: italic; font-weight: 600; }
   ul.books .pub { color: var(--muted); font-size: .95rem; }
+  ul.books li.book-feature { display: flex; gap: 1.1rem; align-items: flex-start; }
+  .book-cover { flex: 0 0 auto; }
+  .book-cover img { width: 92px; height: auto; border-radius: 4px; border: 1px solid var(--rule); display: block; }
+  .book-meta { display: flex; flex-direction: column; gap: .2rem; }
+  .buy { margin-top: .45rem; align-self: start; color: var(--accent); text-decoration: none; font-size: .9rem; font-weight: 600; }
+  .buy:hover { text-decoration: underline; }
 
   ul.pubs, ul.courses { padding-left: 1.2rem; display: grid; gap: .55rem; }
   ul.pubs li::marker, ul.courses li::marker { color: var(--accent); }
@@ -109,7 +115,16 @@
   <section id="books">
     <h2>Books</h2>
     <ul class="books">
-      <li><span class="title">The Ruling Ideas: How They Ruin Society and Make You Miserable</span><br><span class="pub">Zero Books, 2023</span></li>
+      <li class="book-feature">
+        <a class="book-cover" href="https://www.amazon.com/dp/1789049598" target="_blank" rel="noopener" aria-label="The Ruling Ideas on Amazon">
+          <img src="assets/ruling-ideas-cover.jpg" alt="Cover of The Ruling Ideas by Ari Ofengenden" width="324" height="500">
+        </a>
+        <div class="book-meta">
+          <span class="title">The Ruling Ideas: How They Ruin Society and Make You Miserable</span>
+          <span class="pub">Zero Books, 2023</span>
+          <a class="buy" href="https://www.amazon.com/dp/1789049598" target="_blank" rel="noopener">View on Amazon &rarr;</a>
+        </div>
+      </li>
       <li><span class="title">Liberalization and Culture in Contemporary Israel</span><br><span class="pub">Lexington Books / Rowman &amp; Littlefield, 2018</span></li>
       <li><span class="title">Abraham Shlonsky: An Introduction to His Poetry</span><br><span class="pub">De Gruyter, 2014</span></li>
       <li><span class="title">The Passion for Absence in Abraham Shlonsky</span><br><span class="pub">Magnes, Hebrew University Press, 2010</span></li>
